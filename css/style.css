@@ -1,0 +1,170 @@
+:root{
+    --color_uno:#02416d;
+    --color_dos:#0a5483;
+    --color_tres:#066699;
+    --color_cuatro:#aedd2b;
+    --color_cinco:#f8f8ec;
+
+    --color_azul_fondo:#8accef41;
+    --color_verde_fondo:#aedd2b3b;
+    --color_gris_fondo:#00000013;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+.cuerpo{
+    margin-top: 3.5rem;
+}
+/* bienvenida */
+.bienvenida {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 10rem;
+    height: 90vh;
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.563);
+        z-index: 1;
+    }
+}
+.bienvenida h1, p{
+    position: relative;
+    z-index: 2;
+}
+
+
+.header a{
+    color:var(--color_cinco);
+}
+.header a:hover{
+    color:var(--color_cuatro);
+}
+.cont{
+    padding: 2rem;
+}
+
+/* introduccion */
+.intro{
+    background-color: var(--color_azul_fondo);
+}
+
+.intro img{
+    border-radius: 1.5rem;
+}
+
+
+/* seccion seguridad  */
+.dos{
+    background-color: var(--color_gris_fondo);
+}
+.cartas .card{
+    margin: 1rem;
+}
+
+/* seccion redes sociales */
+.tres{
+    background-color: var(--color_verde_fondo);
+}
+.tres #carouselExampleSlidesOnly{
+    height: 50%;
+}
+.tres img{
+    border-radius: 1.5rem;
+}
+
+/* seccion dispositivos moviles */
+
+.cuatro{
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/3361488/pexels-photo-3361488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 7rem;
+    height: 60%;
+    width: 100vw;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.563);
+        z-index: 0;
+    }
+}
+.cuatro .textos{
+    position: relative;
+    z-index: 1;
+}
+.cuatro .card{
+    background-color:#ffffff95;
+}
+
+/* mecanografia */
+.cinco{
+    background-color: var(--color_azul_fondo);
+   
+}
+.cinco .row{
+  
+}
+.cinco img{
+    height: 50%;
+    border-radius: 2rem;
+}
+/* seccion sistemas operativos */
+.seis{
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 7rem;
+    height: 60%;
+    width: 100vw;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.682);
+        z-index: 0;
+    }
+}
+.seis .textos{
+    position: relative;
+    z-index: 1;
+}
+.seis .card{
+    background-color:#ffffff71;
+}
+/* seccionn de office */
+.siete{
+    background-color: var(--color_verde_fondo);
+}
+.siete .card{
+    border: none;
+    background-color:#ffffff60;
+}
