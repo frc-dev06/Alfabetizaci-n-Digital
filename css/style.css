@@ -1,23 +1,26 @@
-:root{
-    --color_uno:#02416d;
-    --color_dos:#0a5483;
-    --color_tres:#066699;
-    --color_cuatro:#aedd2b;
-    --color_cinco:#f8f8ec;
+:root {
+    --color_uno: #02416d;
+    --color_dos: #0a5483;
+    --color_tres: #066699;
+    --color_cuatro: #aedd2b;
+    --color_cinco: #f8f8ec;
 
-    --color_azul_fondo:#8accef41;
-    --color_verde_fondo:#aedd2b3b;
-    --color_gris_fondo:#00000013;
+    --color_azul_fondo: #8accef41;
+    --color_verde_fondo: #aedd2b3b;
+    --color_gris_fondo: #00000013;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Signika Negative', sans-serif;
 }
-.cuerpo{
+
+.cuerpo {
     margin-top: 3.5rem;
 }
+
 /* bienvenida */
 .bienvenida {
     position: relative;
@@ -41,54 +44,74 @@
         z-index: 1;
     }
 }
-.bienvenida h1, p{
+
+.bienvenida h1,
+p {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
 }
 
 
-.header a{
-    color:var(--color_cinco);
+
+.header a {
+    color: var(--color_cinco);
 }
-.header a:hover{
-    color:var(--color_cuatro);
+
+.header a:hover {
+    color: var(--color_cuatro);
 }
-.cont{
+
+.cont {
     padding: 2rem;
 }
 
 /* introduccion */
-.intro{
+.intro {
     background-color: var(--color_azul_fondo);
 }
 
-.intro img{
+.intro img {
     border-radius: 1.5rem;
 }
 
 
 /* seccion seguridad  */
-.dos{
+.dos {
     background-color: var(--color_gris_fondo);
 }
-.cartas .card{
+
+.dos .cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.cartas .card {
     margin: 1rem;
 }
 
+
 /* seccion redes sociales */
-.tres{
+.tres {
     background-color: var(--color_verde_fondo);
 }
-.tres #carouselExampleSlidesOnly{
+
+.tres #carouselExampleSlidesOnly {
     height: 50%;
 }
-.tres img{
+
+.tres img {
     border-radius: 1.5rem;
 }
 
 /* seccion dispositivos moviles */
 
-.cuatro{
+.cuatro {
     position: relative;
     background-image: url('https://images.pexels.com/photos/3361488/pexels-photo-3361488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
@@ -110,28 +133,40 @@
         z-index: 0;
     }
 }
-.cuatro .textos{
+
+.cuatro .textos {
+    
     position: relative;
     z-index: 1;
 }
-.cuatro .card{
-    background-color:#ffffff95;
+.cuatro .cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.cuatro .card {
+    background-color: #ffffff95;
 }
 
 /* mecanografia */
-.cinco{
+.cinco {
     background-color: var(--color_azul_fondo);
-   
+    
 }
-.cinco .row{
-  
+
+.cinco .co {
+    padding: 2rem;
 }
-.cinco img{
+
+.cinco img {
     height: 50%;
     border-radius: 2rem;
 }
+
 /* seccion sistemas operativos */
-.seis{
+.seis {
     position: relative;
     background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
@@ -153,18 +188,33 @@
         z-index: 0;
     }
 }
-.seis .textos{
+
+.seis .textos {
     position: relative;
     z-index: 1;
 }
-.seis .card{
-    background-color:#ffffff71;
+
+.seis .card {
+    background-color: #ffffff71;
+}
+.seis .cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
 }
 /* seccionn de office */
-.siete{
+.siete {
     background-color: var(--color_verde_fondo);
 }
-.siete .card{
+
+.siete .card {
     border: none;
-    background-color:#ffffff60;
+    background-color: #ffffff60;
+}
+.siete .cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
 }
